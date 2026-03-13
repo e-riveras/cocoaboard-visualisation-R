@@ -13,7 +13,7 @@ Chocolate Sales Dashboard — R/Shiny port of the visualization components from 
 
 ## Deployed App
 
-- **Stable (main):** [https://019cdf39-321a-e2fd-813d-f826a07acc26.share.connect.posit.cloud](https://019cdf39-321a-e2fd-813d-f826a07acc26.share.connect.posit.cloud)
+- **Stable (main):** https://019ce94c-207a-9c7d-800f-83e5fe970e41.share.connect.posit.cloud
 
 ## Dataset
 
