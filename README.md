@@ -1,15 +1,15 @@
-# CocoaBoard (R Shiny)
+# CocoaBoard — R Shiny Dashboard
 
-Chocolate Sales Dashboard — R/Shiny port of the visualization components from [DSCI-532_2026_8_cocoaboard](https://github.com/UBC-MDS/DSCI-532_2026_8_cocoaboard).
+An R/Shiny implementation of the Chocolate Sales Dashboard, ported from the Python visualization project [DSCI-532_2026_8_cocoaboard](https://github.com/UBC-MDS/DSCI-532_2026_8_cocoaboard).
 
 
 ## Features
 
-- **Filters:** Date range, Country (multi), Product (multi)
-- **Value boxes:** Total Revenue, Total Boxes Shipped, Active Sales Reps, Avg Revenue, YoY Revenue, MoM Revenue (with loading spinners)
-- **Revenue by Product:** Pie chart (filtered by date, country, product)
-- **Leaderboard table:** Rank, Revenue, Transactions, Boxes, Avg Deal, Rev Share + summary row
-- **Revenue trend:** Line chart for top 5 sales reps by month
+- **Filters:** Date range, Country (multi-select), Product (multi-select)
+- **KPI cards:** Total Revenue, Total Boxes Shipped, Active Sales Reps, Avg Revenue per Transaction, YoY Revenue, MoM Revenue (with loading spinners)
+- **Revenue by Product:** Interactive pie chart (responds to all active filters)
+- **Leaderboard table:** Rank, Revenue, Transactions, Boxes Shipped, Avg Deal Size, Revenue Share — includes a summary row
+- **Revenue trend:** Monthly line chart tracking the top 5 sales reps over time
 
 ## Deployed App
 

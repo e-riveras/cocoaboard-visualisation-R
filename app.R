@@ -1,6 +1,6 @@
 #
-# CocoaBoard - Chocolate Sales Dashboard (R Shiny)
-# Modular layout: R/format_utils.R, R/kpi.R, R/leaderboard.R, R/charts.R
+# CocoaBoard — Chocolate Sales Dashboard (R Shiny)
+# Modular structure: R/format_utils.R, R/kpi.R, R/leaderboard.R, R/charts.R
 #
 
 library(shiny)
@@ -15,11 +15,11 @@ library(bsicons)
 library(scales)
 library(shinycssloaders)
 
-# Load modules (order matters: format_utils before leaderboard)
+# Load modules — format_utils must come before leaderboard
 source("R/format_utils.R", local = TRUE)
-source("R/kpi.R", local = TRUE)
-source("R/leaderboard.R", local = TRUE)
-source("R/charts.R", local = TRUE)
+source("R/kpi.R",          local = TRUE)
+source("R/leaderboard.R",  local = TRUE)
+source("R/charts.R",       local = TRUE)
 
 # ---- Data ----
 data_path <- if (file.exists("data/raw/Chocolate_Sales.csv")) {
@@ -27,7 +27,7 @@ data_path <- if (file.exists("data/raw/Chocolate_Sales.csv")) {
 } else if (file.exists("../data/raw/Chocolate_Sales.csv")) {
   "../data/raw/Chocolate_Sales.csv"
 } else {
-  stop("Chocolate sales CSV not found. Use data/raw/Chocolate_Sales.csv")
+  stop("Chocolate_Sales.csv not found. Expected at data/raw/Chocolate_Sales.csv")
 }
 
 raw <- read.csv(data_path, stringsAsFactors = FALSE)
